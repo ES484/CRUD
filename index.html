@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+
+<body>
+    <div class='bg-black w-75 m-auto p-3 text-white'>
+        <label for="productname">Product Name</label>
+        <input type="text" name="productname" id="productname" class='form-control'>
+        <label for="productprice">Product Price</label>
+        <input type="number" name="productprice" id="productprice" class='form-control'>
+        <label for="productcategory">Product Category</label>
+        <input type="text" name="productcategory" id="productcategory" class='form-control'>
+        <label for="productdescription">Product Description</label>
+        <textarea name="productdescription" id="productdescription" class='form-control'></textarea>
+        <button onclick="addProduct ()" class='btn btn-danger form-control mt-3' id='mainBtn'>Add Product</button>
+    </div>
+
+    <input type="search" name="" id="searchInput" class='w-75 form-control m-auto my-3' placeholder="" onkeyup="serachProduct(this.value)">
+    <table class='table w-75 bg-dark text-white m-auto my-3 text-center'>
+        <thead>
+            <th>No</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Desciption</th>
+        </thead>
+        <tbody id="addedRow">
+
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
